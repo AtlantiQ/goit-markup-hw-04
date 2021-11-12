@@ -51,7 +51,7 @@ p {
 }
 /* Ширина основоной страници */
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -201,11 +201,24 @@ p {
 
 /* Шапка с кнопкой */
 .head-button {
-  background-color: var(--background);
-  text-align: center;
-
-  height: 595px;
+  background: rgb(86 86 86);
 }
+
+.head-button .container {
+  max-width: 1600px;
+  text-align: center;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 1px solid black; */
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../image/Portfolio/head-img.jpg');
+}
+
 .head-button h1 {
   color: var(--background-white);
   font-weight: 900;
@@ -214,16 +227,9 @@ p {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 30px;
-  margin-top: 0;
-}
-
-/* ????? */
-.head-button li {
-  padding-top: 198.33px;
-  padding-bottom: 198.33px;
-  /* padding-left: 452px; */
-  /* padding-right: 452px; */
+  /* margin-bottom: 30px; */
+  padding-top: 200px;
+  padding-bottom: 30px;
 }
 
 .centered {
@@ -270,7 +276,7 @@ p {
   left: 700px;
   top: 430px;
   padding: 0;
-  margin-bottom: 0;
+  margin-bottom: 200px;
 }
 
 /* Заголовки */
@@ -314,8 +320,8 @@ p {
   width: 270px;
   margin-top: 99px;
 }
-.features .features-text {
-}
+/* .features .features-text {
+} */
 /* .features .item {
   flex-basis: calc((100% - 30px) / 4);
 } */
@@ -421,8 +427,8 @@ p {
 
   /* flex-basis: calc((100% - 30px) / 5); */
 }
-.filter .item {
-}
+/* .filter .item {
+} */
 .filter .item:not(:last-child) {
   margin-right: 8px;
 }
