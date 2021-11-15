@@ -150,6 +150,27 @@ p {
   letter-spacing: 0.02em;
   display: block;
 }
+.contacts .mail::before {
+  content: '';
+  width: 16px;
+  height: 12px;
+  /* outline: 1px solid black; */
+  margin-right: 10px;
+  background-image: url('../image/mailpng.png');
+  background-size: contain;
+  display: inline-block;
+}
+
+.contacts .phone::before {
+  content: '';
+  width: 10px;
+  height: 16px;
+  /* outline: 1px solid black; */
+  /* margin-right: 10px; */
+  background-image: url('../image/smartphone.png');
+  background-size: contain;
+  display: inline-block;
+}
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--hover);
@@ -320,11 +341,31 @@ p {
   width: 270px;
   margin-top: 99px;
 }
-/* .features .features-text {
-} */
-/* .features .item {
-  flex-basis: calc((100% - 30px) / 4);
-} */
+/* Особенности картинки  */
+.features .item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  /* background-size: contain; */
+  background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+}
+.details::before {
+  background-image: url('../image/antenapng.png');
+}
+.clock::before {
+  background-image: url('../image/clock.png');
+}
+.computer::before {
+  background-image: url('../image/computer.png');
+}
+.astranaut::before {
+  background-image: url('../image/astronaut.png');
+}
+
 /* Чем мы занимаемся  */
 .boxes .list {
   display: flex;
@@ -337,6 +378,7 @@ p {
   margin-top: 0;
   margin-bottom: 50px;
 }
+
 /* Наша команда */
 
 .team h3 {
