@@ -712,6 +712,11 @@ p {
   align-items: center;
 }
 
-.clients-img:hover .client-icons {
+/* .clients-img:hover .client-icons {
   fill: var(--hover);
+} */
+
+.clients-img:hover {
+  fill: var(--hover);
+  border-color: var(--hover);
 }
